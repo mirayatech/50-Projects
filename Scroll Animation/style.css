@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -26,13 +26,13 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
   margin: 10px;
   border-radius: 10px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
   transform: translateX(400%);
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
 }
 
 .box:nth-of-type(even) {
