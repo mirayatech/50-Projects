@@ -1,0 +1,101 @@
+:root {
+  --left-bg-color: rgba(60, 57, 255, 0.492);
+  --right-bg-color: rgba(33, 33, 33, 0.7);
+  --left-btn-hover-color: rgb(73, 70, 230);
+  --right-btn-hover-color: rgb(255, 179, 0);
+  --hover-width: 75%;
+  --other-witdth: 25%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "poppins", sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3rem;
+  left: 50%;
+  top: 20%;
+  color: #fff;
+  transform: translateX(-50%);
+  position: absolute;
+  white-space: nowrap;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  width: 12rem;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.split.left .btn:hover {
+  border-color: var(--left-btn-hover-color);
+  background-color: var(--left-btn-hover-color);
+}
+
+.split.right .btn:hover {
+  border-color: var(--right-btn-hover-color);
+  background-color: var(--right-btn-hover-color);
+}
+
+.container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #333;
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left: 0;
+  background: url("./img/wallpapersden.com_demon-slayer-kimetsu-no-yaiba-4k-characters_3840x2160.jpg")
+    no-repeat center center/cover;
+}
+
+.split.left::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--left-bg-color);
+}
+
+.split.right::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--right-bg-color);
+}
+.split.right {
+  right: 0;
+  background: url("./img/736004.jpg") no-repeat center center/cover;
+}
