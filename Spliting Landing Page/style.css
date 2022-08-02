@@ -47,6 +47,7 @@ h1 {
   padding: 1.5rem;
   text-align: center;
   border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .split.left .btn:hover {
@@ -80,6 +81,11 @@ h1 {
     no-repeat center center/cover;
 }
 
+.split.right {
+  right: 0;
+  background: url("./img/736004.jpg") no-repeat center center/cover;
+}
+
 .split.left::before {
   content: "";
   position: absolute;
@@ -95,7 +101,19 @@ h1 {
   height: 100%;
   background-color: var(--right-bg-color);
 }
-.split.right {
-  right: 0;
-  background: url("./img/736004.jpg") no-repeat center center/cover;
+
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .right {
+  width: var(--other-witdth);
+}
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .left {
+  width: var(--other-witdth);
 }
