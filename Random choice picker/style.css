@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #09c6429f;
+  background-color: #af7ff3;
   font-family: "Muli", sans-serif;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@ textarea:focus {
 }
 
 .tag {
-  background-color: #ffaa49;
+  background-color: #fcc442;
   color: #fff;
   border-radius: 50px;
   padding: 10px 20px;
@@ -52,5 +52,5 @@ textarea:focus {
 }
 
 .tag.highlight {
-  background-color: #273c75;
+  background-color: hsl(35, 100%, 50%);
 }
