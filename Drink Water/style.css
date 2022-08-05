@@ -43,3 +43,68 @@ h3 {
   flex-direction: column;
   overflow: hidden;
 }
+
+.cup.cup-small {
+  height: 95px;
+  width: 60px;
+  border: 3px solid var(--border-color);
+  border-radius: 0 0 10px 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-size: calc(14 / 16 * 1rem);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+
+.cup.cup-small.full {
+  background-color: var(--fill-color);
+  color: #fff;
+}
+
+.cups {
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+}
+
+.remained {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.remained span {
+  font-size: calc(20 / 16 * 1rem);
+  font-weight: bold;
+}
+
+.remained small {
+  font-size: 0.9rem;
+}
+
+.percentage {
+  background-color: var(--fill-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: calc(25 / 16 * 1rem);
+  height: 0;
+  transition: 0.3s ease;
+}
+
+.text {
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 20px;
+}
