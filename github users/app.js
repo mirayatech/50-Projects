@@ -17,6 +17,16 @@ async function getUser(username) {
   }
 }
 
+async function getRepos(username) {
+  try {
+    const { data } = await axios(APIURL + username + "/repos?sort=created");
+
+    addReposToCard(data);
+  } catch (err) {
+    createErrorCard("Problem fetching repos");
+  }
+}
+
 function createUserCard(user) {
   const userID = user.name || user.login;
   const userBio = user.bio ? `<p>${user.bio}</p>` : "";
