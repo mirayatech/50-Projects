@@ -39,3 +39,15 @@ function createUserCard(user) {
     `;
   main.innerHTML = cardHTML;
 }
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const user = search.value;
+
+  if (user) {
+    getUser(user);
+
+    search.value = "";
+  }
+});
